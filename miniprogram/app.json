@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/list",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "logmeilive",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh":false,
+    "backgroundColor":"#fff"
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "selectedColor": "#15a8f8",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "home",
+      "iconPath": "./statics/images/home.png",
+      "selectedIconPath": "./statics/images/home-select.png"
+    },{
+      "pagePath": "pages/logs/logs",
+      "text": "日志",
+      "iconPath": "./statics/images/content.png",
+      "selectedIconPath": "./statics/images/content-select.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

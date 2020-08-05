@@ -1,0 +1,79 @@
+/**index.wxss**/
+.indexPage{
+  background: #eee;
+}
+.swiperItem{
+  margin-top: 0;
+  width: 100%;
+  height: 400rpx;
+}
+.demo-1{
+  color: red;
+  background: green;
+}
+.demo-2{
+  background: yellow;
+}
+.demo-3{
+  background: red;
+}
+.wiperImg{
+  width: 100%;
+  height: 100rpx;
+}
+.list{
+  background: #fff;
+  margin-top: 15rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.list .listItem{
+  box-sizing: border-box;
+  width: 33.33333%;
+  height: 250rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.list .listItem image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.list .listItem text{
+  color: #333;
+  font-size: 24rpx;
+}
+
+.menus{
+  margin-top: 15rpx;
+  background: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex: 1 1 auto;
+  width: 750rpx;
+  height: 200rpx;
+}
+
+.menus .menuItem{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 33.3333%;
+  height: 100%;
+  vertical-align: middle;
+}
+.menus .menuItem image{
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.menus .menuItem text{
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #333;
+}
