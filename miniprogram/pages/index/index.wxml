@@ -1,26 +1,5 @@
-<!--index.wxml-->
-<view class="indexPage">
-	<swiper 
-  class="swiperItem" 
-  autoplay="{{true}}" 
-  indicator-dots="{{true}}"
-  interval="{{3000}}">
-		<block wx:for="{{background}}" wx:key="unique">
-			<swiper-item>
-				<image class="swiperImg" src="{{item}}"></image>
-			</swiper-item>
-		</block>
-	</swiper>
-  <view class="menus">
-  <view class="menuItem" wx:for="{{menus}}" wx:key="unique">
-  <image src="{{item.src}}"></image>
-   <text>{{item.title}}</text>
-  </view>
-  </view>
-  <view class="list">
-    <view class="listItem" wx:for="{{list}}" wx:key="unique">
-    <image src="{{item.src}}"></image>
-    <text>{{item.title}}</text>
-    </view>
-  </view>
+<!-- 组件模板 -->
+<view class="index">
+ 	 <button data-id="list" type="primary" bindtap="handlerTapList">使用list组件</button>
+   <button data-id="customList" type="primary" bindtap="handlerTapList">自己组装list组件</button>
 </view>

@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "首页",
+  "navigationBarTitleText": "重箱到达",
   "enablePullDownRefresh":true,
   "usingComponents":{
     "list":"/components/list/index",

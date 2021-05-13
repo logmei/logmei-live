@@ -1,0 +1,6 @@
+{
+  "component":true,
+  "usingComponents": {
+    "cargo-progress":"/components/cargo-manage/progress/progress"
+  }
+}

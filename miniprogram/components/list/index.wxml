@@ -1,0 +1,24 @@
+<!-- 组件模板 -->
+<view class="list_class">
+  <search-bar 
+  focus="{{focus}}"
+  class="list_search"
+  value="{{searchValue}}"
+  wx:if="{{showSearch}}"
+  showSearch="{{showSearch}}"
+  bindsearchinput="handlerInput"
+  bindsearchtap="bindtap"
+  bindclose="handlerClose"
+  bindsearch="handlerSearch"></search-bar>
+  <view wx:if="{{!searchValue}}" class="search_value_card {{focus && show_card_class}}"><text>输入相关内容</text></view>
+    
+  <scroll-view
+    class="list_scroll"
+    scroll-y="{{true}}"
+    enhanced="{{true}}"
+    enable-back-to-top="{{true}}"
+    bindscrolltolower="bindscrolltolower"
+    style="height:{{scrollHeight}}px">
+    <slot></slot>
+  </scroll-view>
+</view>

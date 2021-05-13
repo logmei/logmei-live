@@ -1,0 +1,32 @@
+<view class="cargoManageCard">
+<view class="cargoManageContent">
+<view class="type_class {{types[values.type].className}}">{{types[values.type].text}}</view>
+  <view class="cargoManageCard_right">
+    <view class="cargoManageCard_top">
+      <view class="cargoManageCard_right_title">
+        {{values.title}}
+      </view>
+      <view class="cargoManageCard_right_carNo">
+        {{values.rightTitle}}
+      </view>
+    </view>
+    <view class="cargoManageCard_time">
+      {{values.time}}
+    </view>
+    <view class="cargoManageCard_labels">
+      <view class="cargoManageCard_labels_item" wx:for="{{values.labels}}" wx:key="unique">
+        {{item}}
+      </view>
+    </view>
+    
+      <cargo-progress values = "{{values.progress}}"></cargo-progress>
+    
+    
+  </view>
+</view>
+  <block wx:if="{{values.showButton}}">
+    <button class="baseButton" bindtap="onTap">{{values.buttonText}}</button>
+  </block>
+  
+</view>
+  

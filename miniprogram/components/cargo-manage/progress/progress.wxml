@@ -1,0 +1,14 @@
+<view class="progress">
+  <view wx:for="{{list}}" wx:key="name" class="progress_status {{item.lightUp && 'progress_status_active'}}">
+   <view class="progress_status_content">
+    <image class="cricle" src="{{item.lightUp?'./images/complete.svg':'./images/grey-complete.svg'}}"></image>
+    <view class="title">
+      {{item.name}}
+    </view>
+   </view>
+   <image wx:if="{{index !== list.length-1}}" class="line" src="{{item.lightUp?'./images/line.svg':'./images/grey-line.svg'}}"></image>
+   
+  </view>
+    
+</view>
+  

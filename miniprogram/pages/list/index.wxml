@@ -1,0 +1,16 @@
+<!-- 组件模板 -->
+<view class="cargo-search">
+ 	
+    <list 
+    scrollHeight="{{scrollHeight}}" 
+    bindsearchinput="handlerInput"
+    bindclose="handlerClose"
+    bindsearch="handlerSearch"
+    >
+      <empty-layout class="cargo-list" isEmpty="{{isEmpty}}" style="height:100%">
+        <cargo-manage class="cargo_manage_class"> </cargo-manage>
+      </empty-layout>
+    </list>
+   
+  
+</view>

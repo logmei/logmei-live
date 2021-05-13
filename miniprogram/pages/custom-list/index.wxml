@@ -1,0 +1,37 @@
+<!-- 组件模板 -->
+<view class="cargo-search">
+<view class="search_bar_view">
+  <view class="search_bar">
+    <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+      <image src="./date.png" class="search_bar_icon"></image>
+    </picker>
+    
+    <input class="search_bar_input" focus="{{focus}}"  bindinput="handlerInput" placeholder-class="search_bar_input_placeholder" placeholder="项目名称" type="text" value="{{value}}"></input>
+    <image wx:if="{{showClose}}" bindtap="handlerClose" src="./close.svg" class="search_bar_close"></image>
+    <block wx:if="{{showSearch}}">
+      <view class="search_bar_vertical_line"></view>
+      <view class="search_bar_text" bindtap="handlerSearch">搜索</view>
+    </block>
+    </view>
+</view>
+ 
+    <scroll-view
+    class="list_scroll"
+    scroll-y="{{true}}"
+    enhanced="{{true}}"
+    enable-back-to-top="{{true}}"
+    bindscrolltolower="bindscrolltolower"
+    style="height:{{scrollHeight}}px">
+      <empty-layout class="cargo-list" isEmpty="{{isEmpty}}" style="height:100%">
+      <block wx:for="{{list}}" wx:key="time">
+        <view class="cargo-list-time">
+      <text>{{item.time}}</text><text>{{item.count}}</text>
+      </view>
+          <cargo-manage showButton="{{false}}" data="{{item.data}}" class="cargo_manage_class"> </cargo-manage>
+      </block>
+     
+        </empty-layout>
+    </scroll-view>
+     
+  
+</view>

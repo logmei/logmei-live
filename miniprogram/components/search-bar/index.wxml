@@ -1,0 +1,10 @@
+<!-- 组件模板 -->
+<view class="search_bar">
+ <image src="./search.png" class="search_bar_icon"></image>
+ <input class="search_bar_input" focus="{{focus}}"  bindinput="handlerInput" placeholder-class="search_bar_input_placeholder" placeholder="{{placeholder}}" type="text" value="{{value}}" bindtap="handlerTap"></input>
+ <image wx:if="{{showClose}}" bindtap="handlerClose" src="./close.svg" class="search_bar_close"></image>
+ <block wx:if="{{showSearch}}">
+  <view class="search_bar_vertical_line"></view>
+  <view class="search_bar_text" bindtap="handlerSearch">搜索</view>
+ </block>
+</view>

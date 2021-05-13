@@ -1,0 +1,29 @@
+.empty_layout{
+  height: 100%;
+  position: relative;
+}
+.empty_layout_nothing{
+  width: 100%;
+  height: 304rpx;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.empty_layout_nothing image{
+  display: block;
+  width: 238rpx;
+  height: 238rpx;
+  margin: auto;
+  margin-bottom: 24rpx;
+}
+.empty_layout_text{
+  text-align: center;
+  font-size: 30rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #B8B8B8;
+  line-height: 30rpx;
+}

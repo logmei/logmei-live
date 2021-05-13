@@ -1,0 +1,28 @@
+.list_class{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.search_value_card{
+  position: absolute;
+  z-index: 1;
+  background: #F5F5FA;
+  top: 84rpx;
+  height: calc(100% - 84rpx);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  padding-top: 294rpx;
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #949494;
+}
+
+.list_scroll{
+  margin-top: 30rpx;
+  flex-grow: 1;
+}
+

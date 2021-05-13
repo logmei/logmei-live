@@ -1,0 +1,8 @@
+<!-- 组件模板 -->
+<view class="cargo_manage">
+<block wx:for="{{list}}" wx:key="unique">
+  <cargo-card values="{{item}}" class="cargo_manage_item">
+  </cargo-card>
+</block>
+  
+</view>

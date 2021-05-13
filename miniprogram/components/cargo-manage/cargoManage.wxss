@@ -1,0 +1,9 @@
+
+.cargo_manage{
+  display: inline-block;
+  flex-grow: 1;
+}
+.cargo_manage_item{
+  margin-bottom: 36rpx;
+  display: block;
+}

@@ -1,0 +1,15 @@
+<!-- 组件模板 -->
+<view class="empty_layout">
+  <view class="empty_layout_nothing" wx:if="{{isEmpty}}">
+    <image src="./nothing.png" mode="aspectFit"/>
+    <view class="empty_layout_text">
+      {{emptyText}}
+    </view>
+      
+  </view>
+  <block wx:if="{{!isEmpty}}">
+    <slot></slot>
+  </block>
+    
+    
+</view>
