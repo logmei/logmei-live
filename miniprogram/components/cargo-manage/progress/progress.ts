@@ -40,5 +40,16 @@ Component({
         } )
         })
     },
+  },
+  observers: {
+    'values': function(values) {
+      // 在 numberA 或者 numberB 被设置时，执行这个函数
+      this.setData({
+        list:this.data.list.map((v,index)=>{
+          v.lightUp = values[index]
+          return v
+        } )
+      })
+    }
   }
 })
